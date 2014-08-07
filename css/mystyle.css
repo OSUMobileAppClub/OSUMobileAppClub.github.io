@@ -1,0 +1,45 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	background-image: url("../img/binding_dark.png")
+}
+
+.content {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.phone-image-div {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.tagline {
+	font-size: 22pt;
+}
+
+.time {
+	font-size: 16pt;
+}
+
+.phone-image {
+	/*width: 130px;*/
+}
+
+.absolute-holder {
+	height: 200px;
+}
+
+.absolute-holder2 {
+	height: 200px;
+}
+
+header {
+	height: 45px;
+}
