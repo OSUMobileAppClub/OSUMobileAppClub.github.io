@@ -84,13 +84,20 @@ a:hover {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     -webkit-animation:spin 2s linear forwards;
+ 	-moz-animation:spin 2s linear forwards;   
 }
 
 .phone {
     stroke-dasharray: 2000;
     stroke-dashoffset: -1500;
     -webkit-animation:spin 1.5s linear forwards;
-    /*-webkit-animation-direction: reverse;*/
+    -moz-animation:spin 1.5s linear forwards;
+}
+
+@-moz-keyframes spin { 
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @-webkit-keyframes spin { 
