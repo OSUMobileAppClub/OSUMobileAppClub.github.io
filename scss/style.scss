@@ -1,17 +1,16 @@
-// -----------
-// VARIABLES
-// -----------
-
-$pad: 35px;
-$black: black;
-$grey: grey;
-$primary: #33b5e5;
-
 .border {
+
   border: 30px solid transparent;
-      -webkit-border-image: -webkit-linear-gradient(right, #33b 0%, #33b5e5 100%);
-      border-image-slice: 1;
+  -webkit-border-image: -webkit-linear-gradient(right, #33b 0%, #33b5e5 100%);
+  border-image-slice: 1;
+  
+  @media screen and (max-width: 450px) {
+    border-left: 0;
+    border-right: 0;
+  }
 }
+
+// OLD
 
 .thanks {
   background: -webkit-linear-gradient(right, #33b 0%, #33b5e5 100%);

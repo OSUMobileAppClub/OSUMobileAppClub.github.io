@@ -1,0 +1,41 @@
+.content {
+	width: 90%;
+	margin: auto;
+
+	@media #{$little} {
+		max-width: 768px;
+		width: 80%;
+	}
+}
+
+.g-med {
+	width: 100%;
+	margin: 0;
+
+	@media #{$little} {
+		width: 45%;
+		flat: left;
+		margin-right: 5%;
+
+		&:last-of-type {
+			margon-right: 0;
+		}
+	}
+
+	@media #{$desktop} {
+		width: 30%;
+	}
+}
+
+
+.dis-f {
+	width: 100%;
+  @include display(flex);
+  @include flex-flow(row wrap);
+  @include justify-content(space-around);
+}
+
+.f-item {
+	width: 25%;
+	float: left;
+}
