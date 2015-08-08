@@ -7,6 +7,16 @@ $desktop: "(min-width: 1000px)"; // desktop
 $pad : 35px;
 $body: 16pt;
 
+// FONTS
+$serif: 'Lora', serif;
+$sans: 'Montserrat', sans-serif;
+
+@mixin sans($weight, $size) {
+	font-family: $sans;
+	font-size: $size;
+	font-weight: $weight;
+}
+
 // COLORS
 $black  : #333333;
 $grey   : #858585; 

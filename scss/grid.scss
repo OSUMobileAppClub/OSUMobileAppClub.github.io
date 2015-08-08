@@ -11,22 +11,29 @@
 .g-med {
 	width: 100%;
 	margin: 0;
-
-	@media #{$little} {
-		width: 45%;
-		flat: left;
-		margin-right: 5%;
-
-		&:last-of-type {
-			margon-right: 0;
-		}
-	}
+	// display: inline-block;
 
 	@media #{$desktop} {
 		width: 30%;
+		float: left;
+		margin-right: 5%;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 }
 
+.d-tbl {
+	display: table;
+	width: 100%;
+}
+
+.t-cell {
+	display: table-cell;
+	width: 33%;
+	padding: 5px;
+}
 
 .dis-f {
 	width: 100%;
@@ -36,6 +43,18 @@
 }
 
 .f-item {
-	width: 25%;
-	float: left;
+
+	width: 100%;
+
+	@media #{$little} {
+		@include flex-grow(1);
+		
+		width: 30%;
+		float: left;
+
+		padding-right: 5px;
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
 }
