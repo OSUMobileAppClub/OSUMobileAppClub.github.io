@@ -1,8 +1,10 @@
 <div class="content">
 	<div class="members dis-f">
 		<div ng-repeat="m in members" class="member">
+			<a href="https://github.com/{{m.gh}}">
 			<div class="img-wrap"><img class="f" onload="this.style.opacity = '1'" src="{{m.avatar_url}}"></div>
-			<h2><a href="https://github.com/{{m.gh}}">{{m.name}}</a></h2>
+			<h2>{{m.name}}</h2>
+			</a>
 		</div>
 	</div>
 </div>

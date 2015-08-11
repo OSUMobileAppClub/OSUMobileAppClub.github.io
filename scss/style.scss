@@ -58,18 +58,10 @@ p {
   }
 }
 
-img {
-  background: url(images/mac.svg);
-}
-
-.img-wrap {
-  
-}
-
 .f {
-  @include transition(opacity 0.3s);
-  height: 100px;
-  width: 100px;
+  @include transition(opacity 0.7s);
+  height: 100%;
+  width: 100%;
   border-radius: 50px;
   opacity: 0;
 }
@@ -154,9 +146,6 @@ img {
 
 .member {
   text-align: center;
-
-  // size 
-
   width: 100%;
   @include flex-grow(1);
 
@@ -170,19 +159,35 @@ img {
   }
 
   margin-top: $pad;
-  margin-bottom: $pad;
 
   a {
-    @include sans(600, 16pt);
+
+    @include transition(color 0.2s);
+
+    width: 100%;
+    height: 100%;
+
     text-decoration: none;
     color: $black;
-
+    
     &:hover {
       color: $primary;
     }
   }
+
+  h2 {
+    @include sans(600, 16pt);
+    margin-top: $pad / 3;
+  }
 }
 
+.img-wrap {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: url(A4.svg);
+  margin: auto;
+}
 
 // OLD
 
