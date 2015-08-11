@@ -1,6 +1,7 @@
 <div class="members dis-f">
+
 	<div ng-repeat="m in members" class="member f-item">
-		<img src="">
+		<div class="img-wrap"><img class="f" onload="this.style.opacity = '1'" src="{{m.avatar_url}}"></div>
 		<a href="https://github.com/{{m.gh}}">{{m.name}}</a>
 	</div>
 </div>

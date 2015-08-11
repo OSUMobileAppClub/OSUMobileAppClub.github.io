@@ -62,13 +62,16 @@ img {
   background: url(images/mac.svg);
 }
 
-.live {
-  opacity: 1;
+.f {
+  @include transition(opacity 0.3s);
+  opacity: 0;
 }
 
 .desc {
   font-size: $body + 3;
 }
+
+// -----------------------------------
 
 // POSTS 
 

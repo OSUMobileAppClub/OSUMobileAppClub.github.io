@@ -1,9 +1,10 @@
-var user = new Gh3.User("mobileapposu");
-console.log(user);
+var app = angular.module('MoApp', []);
 
-var repos = new Gh3.Repositories(user);
+app.controller('Members', ['$scope', 'GHMembers', Members]);
 
-repos.fetch( function () {
-   console.log("Repositories", repos);
-});
+function Members($scope, GHMembers) {
+	$scope.members = GHMembers;
+	console.log("fire");
+	console.log($scope.members);
+}
 

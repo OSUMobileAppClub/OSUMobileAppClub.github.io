@@ -151,8 +151,11 @@ p {
 img {
   background: url(images/mac.svg); }
 
-.live {
-  opacity: 1; }
+.f {
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0; }
 
 .desc {
   font-size: 19pt; }
