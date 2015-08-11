@@ -62,8 +62,15 @@ img {
   background: url(images/mac.svg);
 }
 
+.img-wrap {
+  
+}
+
 .f {
   @include transition(opacity 0.3s);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
   opacity: 0;
 }
 
@@ -141,7 +148,40 @@ img {
   }
 }
 
+// -----------
 
+// MEMBERS
+
+.member {
+  text-align: center;
+
+  // size 
+
+  width: 100%;
+  @include flex-grow(1);
+
+  @media #{$little} {
+    width: 50%;
+    max-width: 250px;
+  }
+
+  @media #{$desktop} {
+    width: 25%;
+  }
+
+  margin-top: $pad;
+  margin-bottom: $pad;
+
+  a {
+    @include sans(600, 16pt);
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
 
 
 // OLD

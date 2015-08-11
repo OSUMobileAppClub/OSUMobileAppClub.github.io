@@ -48,6 +48,24 @@ table {
       .g-med:last-of-type {
         margin-right: 0; } }
 
+.g-sm {
+  width: 100%;
+  margin: 0; }
+  @media (min-width: 550px) {
+    .g-sm {
+      width: 45%;
+      float: left;
+      margin-right: 5%; }
+      .g-sm:last-of-type {
+        margin-right: 0; } }
+  @media (min-width: 1000px) {
+    .g-sm {
+      width: 20%;
+      float: left;
+      margin-right: 5%; }
+      .g-sm:last-of-type {
+        margin-right: 0; } }
+
 .d-tbl {
   display: table;
   width: 100%; }
@@ -79,10 +97,10 @@ table {
   justify-content: space-around;
   -ms-flex-pack: distribute; }
 
-.f-item {
+.f-item-md {
   width: 100%; }
   @media (min-width: 550px) {
-    .f-item {
+    .f-item-md {
       -webkit-flex-grow: 1;
       -moz-flex-grow: 1;
       flex-grow: 1;
@@ -90,7 +108,7 @@ table {
       width: 30%;
       float: left;
       padding-right: 5px; }
-      .f-item:last-of-type {
+      .f-item-md:last-of-type {
         padding-right: 0; } }
 
 .border {
@@ -155,6 +173,9 @@ img {
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
   opacity: 0; }
 
 .desc {
@@ -206,5 +227,30 @@ img {
       color: #333333; }
     .more-story:hover h3 {
       color: #3374D0 !important; }
+
+.member {
+  text-align: center;
+  width: 100%;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  margin-top: 35px;
+  margin-bottom: 35px; }
+  @media (min-width: 550px) {
+    .member {
+      width: 50%;
+      max-width: 250px; } }
+  @media (min-width: 1000px) {
+    .member {
+      width: 25%; } }
+  .member a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333333; }
+    .member a:hover {
+      color: #3374D0; }
 
 /*# sourceMappingURL=main.css.map */

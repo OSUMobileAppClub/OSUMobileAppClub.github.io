@@ -24,6 +24,32 @@
 	}
 }
 
+.g-sm {
+	width: 100%;
+	margin: 0;
+	// display: inline-block;
+
+	@media #{$little} {
+		width: 45%;
+		float: left;
+		margin-right: 5%;
+
+		&:last-of-type {
+			margin-right: 0;
+		}	
+	}
+
+	@media #{$desktop} {
+		width: 20%;
+		float: left;
+		margin-right: 5%;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
 .d-tbl {
 	display: table;
 	width: 100%;
@@ -42,7 +68,7 @@
   @include justify-content(space-around);
 }
 
-.f-item {
+.f-item-md {
 
 	width: 100%;
 
