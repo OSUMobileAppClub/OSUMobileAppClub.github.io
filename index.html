@@ -7,20 +7,65 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="description" content="We are the Mobile App Club">
 	  <meta name="viewport" content="width=device-width initial-scale=1">
+		<script src="bower_components/jquery/dist/jquery.js"></script>
 
 	  <link rel="stylesheet" type="text/css" href="style/main.css">
-	  <!-- <link rel="stylesheet" href="style/font-awesome.min.css"> -->
-
+	  
 </head>
-<body ng-app="MoApp">
-	<div ng-controller="Members">
-		<div ng-include src="'views/members.html'"></div>
+<body>
+	<nav>
+		<div class="content">
+			<div class="menu">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="">Join</a></li>
+					<li><a href="/members/members.html">Members</a></li>
+				</ul>
+			</div>
+			<div class="social">
+				<ul>
+					<li>M</li>
+					<li>T</li>
+					<li>G</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="home fade">
+		<div class="t content">
+			<div class="t-full">
+				<h1 class="letters">Mobile App Club.</h1>
+				<h3>Every Wednesday at 7:00pm</h3>
+				<h3>120 Caldwell Labs | The Ohio State University</h3>
+			</div>
+		</div>
+		<div class="scroll-down"><h3>Scroll Down</h3></div>
 	</div>
 
-	<!-- SCRIPTS -->
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/gh.js"></script>
+	<div class="content main">
+		<div class="center"><img class="logo" src="A4.svg"></div>
+			<div>
+				<h2>We make mobile apps</h2>
+				<p>Every week we meet to accomplish the same goal: Becoming mobile developers. Everyone has their own approach – whether it's using agile over waterfall or using iOS over Android. That doesn't matter to us. We're here to help make it awesome. We're hear to help you grow. We're here to teach you something new. We're here to make sure you ship it. 
+				</p>
+				<a class="button" href="">Join the mailing list</a>
+				<a class="button" href="">Questions</a>
+			</div>
+			<div>
+				<h2>Anyone can join</h2>
+				<p>We don't care if you're a designer, entrepreneur, or a developer. That goes for experience levels too. If you want to learn how to make mobile apps, we're here to support you.
+				</p>
+			</div>
+			<div>
+				<h2>Meetings</h2>
+				<p>We meet every Wednesday at 7:00 in 120 Caldwell Labs. We like to open each meeting with discussion about recent news in the mobile field. We move into the weekly lecture, which can be anything from a guest speaker or a talk on the newest framework After the meeting's lecture. To close, we break into groups and work on our mobile projects.
+				</p>
+			</div>
+	</div>
+	<div class="sponsors">
+		<p>We are proudly sponsors by:</p>
+		<img src="img/pillar.jpg">
+	</div>
 </body>
 </html>
